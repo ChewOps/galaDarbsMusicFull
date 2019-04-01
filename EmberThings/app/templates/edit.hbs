@@ -1,0 +1,13 @@
+<h2>
+  Edit {{model.title}} by {{model.artist}}
+</h2>
+
+<form {{action "save" on="submit"}}>
+  <dt><p>Title:</p> {{textarea value=model.title cols="100" rows="1"}}</dt>
+  <dt><p>Artist:</p> {{textarea value=model.artist cols="50" rows="1"}}</dt>
+  <dt><p>Year:</p> {{textarea value=model.year cols="4" rows="1"}}</dt>
+  <dt><p>Genre:</p> {{textarea value=model.genre cols="40" rows="1"}}</dt>
+  <dt><p>Lyrics:</p> {{textarea value=model.lyrics cols="100" rows="100"}}</dt>
+  <button type="submit" class="btn btn-primary">Add</button>
+  <button type="delete" class="btn btn-primary" {{action "del" on="click"}}>Delete</button>
+</form>

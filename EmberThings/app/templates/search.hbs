@@ -1,0 +1,12 @@
+<ul>
+  {{#each model as |song|}}
+    <li>
+	<p>
+      <b>{{song.artist}} - {{song.title}} </b><br>
+      Released: {{song.year}} <br>
+      Genre: {{song.genre}} <br>
+      Lyrics:<br> "{{song.lyrics}}"<br><br>
+	</p>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,12 @@
+<h2>
+  Add a new song
+</h2>
+
+<form {{action "saveSong" on="submit"}}>
+  <dt>Title:<br> {{textarea value=title cols="100" rows="1"}}</dt>
+  <dt>Artist<br> {{textarea value=artist cols="50" rows="1"}}</dt>
+  <dt>Year<br> {{textarea value=year cols="4" rows="1"}}</dt>
+  <dt>Genre:<br> {{textarea value=genre cols="40" rows="1"}}</dt>
+  <dt>Lyrics:<br> {{textarea value=lyrics cols="100" rows="100"}}</dt>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
