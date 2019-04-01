@@ -7,7 +7,7 @@ export default Controller.extend({
 		var allSongs = this.get('model')
 		var artistArray = allSongs.map(function(model) {
           var artist = model.get('artist');
-          return artist;
+          return artist; //atgriež masīvu ar mūziķiem
         });
 		var titleArray = allSongs.map(function(model) {
           var title = model.get('title');

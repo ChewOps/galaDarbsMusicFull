@@ -1,0 +1,224 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-image: url("blue_bg.jpg");
+	background-repeat: repeat-y;
+	background-size: auto;
+	background-position:center;
+	font-weight: 300;
+	font-size: 14px;
+	color: #414f57;
+	margin-bottom: 15px;
+}
+/* 
+uzstāda border, tā krāsu, fona krāsu, kā arī atstarpes no malām
+*/
+main {
+    background-color: white;
+    border-top: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-style: solid;
+    border-color: #dddddd;
+	border-radius: 8px;
+    margin-top: 55px;
+    margin-right: 21px;
+    margin-left: 21px;
+	height: auto;
+}
+/*
+h1, h2 iecentrē, uzliek atstarpi starp burtiem un relatīvo pozicionēšanu
+*/
+h1, h2, h3, h4 {
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+	text-transform: uppercase;
+}
+/* Atstarpe zem h2 */
+h2 {
+	margin-bottom: 30px;
+}
+/*
+paragrāfam atkāpe no malas
+*/
+p {
+	padding-bottom: 10px;
+    position: relative;
+}
+/*
+saites krāsa, noņem pasvītrojumu, noformatē fontu, atstarpes
+*/
+
+a {
+	text-decoration: none;
+}
+
+.upA {
+    color: #FF6347;
+   
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+	font-weight: 600;
+	font-size: 18px;
+}
+/*
+krāsa, uzejot uz saites
+*/
+.upA:hover{
+	color: #ff7496;
+}
+/*
+iecentrē navigāciju, nomaina fonta izmēru un atstarpi zem tās
+*/
+nav {
+	margin-top: 30px;
+    text-align: center;
+	margin-bottom: 40px;
+}
+
+header {
+	margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+/*
+padara hr līniju redzamu
+*/
+hr {
+    border-top: 1px;
+    border-color: #dddddd;
+    border-style: solid;
+}
+/*
+padara bildi lapas augšā apaļu un izmaina tās platumu
+*/
+img.round {
+	border-radius: 50%;
+	width: 15%
+}
+
+/*
+iestata kājeni tā, lai tā vienmēr būtu lapas apakšā, padara to 75% redzamu
+*/
+footer {
+	margin-top: 30px;
+	margin-left: -30px;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	opacity: 0.75;
+	position: absolute;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+	text-transform: uppercase;
+}
+
+/* aizpildāmās formas formatējums */
+form {
+	text-align: center;
+	display: block-inline;
+}
+
+textarea {
+	width: 30%;
+	max-width: 1000px;
+	max-height: 500px;
+}
+
+input {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 20px;
+}
+
+.field {
+	width: 30%;
+}
+
+/* tabulas formatējums */
+table {
+	text-align: center;
+	display: block-inline;
+	width: 70%;
+	border: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th {
+	border: solid;
+	border-width: 1px;
+}
+
+td {
+	border: solid;
+	border-width: 1px;
+}
+
+p {
+	text-align: center;
+	white-space: pre-line
+}
+
+ol {
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.container:hover{
+	opacity: 0.7;
+}
+
+.container {
+  height: 250px;
+  width: 400px;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 400px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#image {
+  position: absolute;
+  clip: rect(0px,400px,250px,0px);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#text {
+  z-index: 100;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.center{
+	text-align: center;
+	margin: auto;
+    width: 100%;
+	margin-bottom: 30px;
+}
+
+.margin{
+	padding-left: 5px;
+	padding-right: 5px;
+	display:inline-block;
+	margin-bottom: -10px;
+	cursor: auto;
+}
+
+.search{
+	float: right;
+}
+

@@ -12,7 +12,6 @@ const SongSchema = new mongoose.Schema({
 });
 
 const Song = mongoose.model('song', SongSchema);
-const SearchResult = mongoose.model('searchResults', SongSchema);
 
 module.exports = (app) => {
 
@@ -32,7 +31,7 @@ module.exports = (app) => {
       const song = await Song.findById(req.params.id).lean();
       if(!song) {
         return res.status(404).send({
-          message: "Song not found",
+          message: "Song not found.",
           params: req.params
         });
       }
@@ -46,14 +45,14 @@ module.exports = (app) => {
 
   app.put('/api/songs/:id', function (req, res) {
     var id = req.params.id;
-    console.log("song update request received   "+id);
+    console.log("Song update request   "+id);
     var song = Song.findByIdAndUpdate(id, req.body.song, function(err, song){
     try {
       console.log(req.params);
       console.log(req.body);
       if(!song) {
         return res.status(404).send({
-          message: "Song not found",
+          message: "Song not found.",
           params: req.params
         });
       }

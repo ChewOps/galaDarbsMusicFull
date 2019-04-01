@@ -17,7 +17,7 @@ actions: {
               lyrics:lyrics
       });
       song.save();
-      this.transitionToRoute('song');
+      this.transitionToRoute('song'); //pēc tam pārmet uz šo template
 	}
 }
 });
